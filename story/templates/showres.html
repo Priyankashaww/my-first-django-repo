@@ -1,0 +1,12 @@
+<html>
+<body>
+<table border="1">
+<p><strong>Reservation Table Details:</strong></p>
+<tr><th>Name</th><th>Contact no.</th><th>Date</th><th>Seats</th></tr>
+{% for i in s %}
+<tr><td>{{ i.name }}</td><td>{{ i.phno }}</td><td>{{ i.date }}</td><td>{{ i.seats }}</td><td><a href="delr/{{i.id}}">Delete</a></td><td><a href="editres/{
+{ i.id }}">Edit</a></td></tr>
+{% endfor %}
+</table>
+</body>
+</html>

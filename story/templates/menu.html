@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+{% load static%}
+<html>
+	<head>
+        <title>Menu</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="stylesheet" href="{%static 'story/style.css'%}">
+			<style>
+h4 {
+    font-weight: 100 !important;
+    margin-bottom: 20px;
+    color: white;
+  }
+.mt10{
+	margin-top: 20px;}
+.ml10 {
+        margin-left: 10px;}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;}
+* {
+  box-sizing: border-box;}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;}
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 186, 93, 0.5);
+	cursor: pointer;}
+	</style>
+<body style="background-color:black; background-size: 1000px 900px;background-repeat: no-repeat;background-position: center center;
+    background-attachment: fixed;">
+	<div class="container">
+           <div class="row mt10 ml10 ">
+             <h1 style="color:white;"><strong>Menu</strong></h1>
+             <p style="color:skyblue;">Juzt Grab Your Cravings</p>
+		   </div>
+         <hr>
+		 <h2 style="color:red;">Soups </h2>
+         <div class="row mt10 ml10">
+             <div class="column">
+                <img class="faq" src="{% static 'Sweetcorn.jpg' %}" style="border-radius:8px; padding:5px;" alt="Sweet corn" height="270" width="250">
+				<h4>Sweet Corn Soup</h4>
+				<h4>₹110</h4>
+             </div>
+			 <div class="column">
+                <img src="{% static 'manchow.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Man Chow soup" height="250" width="200">
+				<h4>Man Chow Soup</h4>
+				<h4>₹130</h4>
+             </div>
+			<div class="column">
+				<img src="{% static 'mixed.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Mixed Soup" height="250" width="180">
+				<h4>Mixed Soup</h4>
+				<h4>₹150</h4>
+             </div>
+            <div class="column">
+				<img src="{% static 'tomato.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Tomato Soup" height="250" width="200">
+				<h4>Tomato Soup</h4>
+				<h4>₹150</h4>
+            </div>
+		 </div>
+		<hr>
+		<h2 style="color: green">Salad </h2> 
+          <div class="row mt10 ml10">
+             <div class="column">
+				<img src="{% static 'gsalad.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Green Salad" height="250" width="200">
+				<h4>Green salad</h4>
+				<h4>₹70</h4>
+             </div>
+			 <div class="column">
+				<img src="{% static 'friut.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Mixed Fruit Salad" height="250" width="200">
+				<h4>Mixed Fruit salad</h4>
+				<h4>₹90</h4>
+             </div>
+			 <div class="column">
+				<img src="{% static 'russain.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Russain Salad" height="250" width="180">
+				<h4>Russain salad</h4>
+				<h4>₹110</h4>
+             </div>
+             <div class="column">
+				<img src="{% static 'saladpasta.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Pasta Salad" height="250" width="180">
+				<h4>Pasta salad</h4>
+				<h4>₹150</h4>
+             </div> 
+         </div>
+		 <hr>
+		 <h2 style="color: orange;">Appetizers</h2>
+         <div class="row mt10 ml10">
+             <div class="column">
+                 <img src="{% static 'lasagna.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Lasagna" height="250" width="200">
+				<h4>Lasagna</h4>
+				<h4>₹220</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'fordue.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Cheese Fordue" height="250" width="200">
+				<h4>Cheese Fordue</h4>
+				<h4>₹450</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'pita.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Hummus with pita" height="250" width="180">
+				<h4>Hummus With Pita</h4>
+				<h4>₹350</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'bruschetta.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Classic Bruschetta" height="250" width="180">
+				<h4>Classic Bruschetta</h4>
+				<h4>₹300</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'arancini.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Arancini(cheese and rice ball) " height="250" width="180">
+				<h4>Arancini(cheese and rice ball) </h4>
+				<h4>₹280</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'garlicbread.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Garlic Bread" height="250" width="200">
+				<h4>Garlic Bread</h4>
+				<h4>₹250</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'babycorn.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Crispy chilli Babycorn" height="250" width="220">
+				<h4>Crispy Chilli Babycorn</h4>
+				<h4>₹350</h4>
+			</div>
+		  </div> 
+		  <hr>
+		  <h2 style="color: pink;">Pasta and Rissoto</h2>
+		  <div class="row mt10 ml10">
+			<div class="column">
+                 <img src="{% static 'ollio.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Spaghetti aglio olio" height="250" width="180">
+				<h4>Spaghetti Aglio Olio</h4>
+				<h4>₹250</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'penne.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Penne al arrabiata" height="250" width="200">
+				<h4>Penne Al Arrabiata</h4>
+				<h4>₹350</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'mac.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Mac and Cheese" height="250" width="180">
+				<h4>Mac & Cheese</h4>
+				<h4>₹400</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'risotto.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Parmesan Risotto" height="250" width="180">
+				<h4>Parmesan Risotto</h4>
+				<h4>₹350</h4>
+			</div>
+		  </div>
+		  <hr>
+		  <h2 style="color: yellow;">Pizza</h2>
+		  <div class="row mt10">
+			<div class="column">
+				<img src="{% static 'margherita.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Margherita" height="250" width="180">
+				<h4>Margherita</h4>
+				<h4>₹400</h4><hr>
+			</div>
+			<div class="column">
+				<img src="{% static 'green.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Green Veggie" height="250" width="200">
+				<h4>Green Veggie</h4>
+				<h4>₹450</h4><hr>
+			</div>
+			<div class="column">
+				<img src="{% static 'pepperoni.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Peppreoni" height="250" width="210">
+				<h4>Pepperoni</h4>
+				<h4>₹450</h4><hr>
+			</div>
+			<div class="column">
+				<img src="{% static 'spcl.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Special Pizza" height="250" width="200">
+				<h4>Urban Kitchen Special pizza**</h4>
+				<h4>₹470</h4>
+			</div>
+		  </div>
+		  <div class="row mt10 ml10">
+			<div class="column">
+				<h4>*Extra Cheese</h4>
+				<h4>  +₹40</h4></div>
+			<div class="column">
+				<h4>*Extra thin crust </h4>
+				<h4>  +₹30</h4></div>
+			<div class="column">
+				<h4>*Heart shape pizza</h4>
+				<h4>  +₹15</h4></div>
+		  </div>
+		  <hr>
+		  <h2 style="color: brown;">Desserts</h2>
+		  <div class="row mt10 ml10">
+			<div class="column">
+                 <img src="{% static 'nutella.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Nutella Cheesecake" height="250" width="180">
+				<h4>Nutella Cheesecake</h4>
+				<h4>₹300</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'macaroons.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Coconut Macroons" height="250" width="180">
+				<h4>Coconut Macaroons</h4>
+				<h4>₹200 for 5 pic</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'sizzling.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Sizzling Brownie With Ice Cream" height="250" width="200">
+				<h4>Sizzling Brownie With Ice Cream</h4>
+				<h4>₹250</h4>
+			</div>
+			<div class="column">
+                 <img src="{% static 'pullup.jpg' %}" style="border-radius:8px;" style="padding:5px;" alt="Pullup Tiramisu" height="250" width="180">
+				<h4>Pullup Tiramisu</h4>
+				<h4>₹300</h4>
+			</div>
+		  </div>
+		</div>
+</body>
+</html>

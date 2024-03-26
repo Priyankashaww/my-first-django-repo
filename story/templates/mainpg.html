@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urban Kitchen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <link rel="stylesheet" href="{%static 'story/style.css'%}">
+		<style>
+				.mt10{
+	margin-top: 20px;}
+.ml10 {
+        margin-left: 10px;}
+h1 {
+    text-align: center;
+    font-weight: 100 !important;
+    text-transform: capitalize;
+    font-size: 75px;
+    margin-bottom: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 50px 200px;
+    padding: 20PX;
+	position: absolute;
+	top: 30%;left: 15%;}
+h1:hover {
+	background-color: rgb(235, 249, 238);
+	color:purple;
+	cursor: pointer;}
+h2{
+	text-align: center;
+    font-weight: 100 !important;
+    color: white;
+    padding: 20PX;
+	position: absolute;
+	top: 25%;left: 40%;}	
+h2:hover {
+	text:bold;
+	color:purple;
+	cursor: pointer;}
+</style>
+</head>
+<link rel="stylesheet" href="{% static 'story/style.css' %}">
+
+<body style="background-image: url('{% static 'chori.jpg' %}');background-size: 100% 100%; background-repeat: no-repeat;background-position: center center;
+    background-attachment: fixed;" >
+	<div>
+		<ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color:auto;position: fixed;top: 0;width: 100%	;"><h3><b>
+			<li style="display: block;color:red;text-align: left;padding: 14px 16px;text-decoration: none;"><a style="color:orange"  href="main">Home</a> |
+			<a style="color:orange" href="men">Menu</a></li>
+			<li style="text-align:right; display: block;color: grey;padding: 20px 50px;text-decoration: none; top:2%;">
+			<a style="color: green ;" href="log">Log In</a>|
+            <a style="color: green;" href="sign">Sign In</a></li></h3></b>
+		</ul>
+	</div>
+	<h2>Welcome To</h2>
+	<h1 >Urban Kitchen</h1>
+	<div>
+		<ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color:auto;position: fixed;bottom: 0;width: 100%;">
+			<li style="display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;"><a href="admin" style="color:white;"><b>Admin Login</b></a>  |    
+			<a href="contact" style="color:white"><b> Contact Us</b></a>|    <a href="about" style="color:white;"><b>About Us</b></a></li>			
+		</ul>
+	</div>
+</body>
+</html>

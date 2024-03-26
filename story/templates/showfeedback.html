@@ -1,0 +1,11 @@
+<html>
+<body>
+<table border="1">
+<p><strong>Feedback Table Details:</strong></p>
+<tr><th>Name</th><th>Email_id</th><th>Comment</th></tr>
+{% for i in a %}
+<tr><td>{{ i.name }}</td><td>{{ i.email }}</td><td>{{ i.comment }}</td><td><a href="dela/{{i.id}}">Delete</a></td><td><a href="editad/{{ i.id }}">Edit</a></td></tr>
+{% endfor %}
+</table>
+</body>
+</html>

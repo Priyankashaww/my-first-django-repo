@@ -1,0 +1,241 @@
+from django.db import models 
+
+class user (models.Model):
+	name=models.CharField(max_length=50)
+	email=models.EmailField(max_length=50)
+	pwd=models.CharField(max_length=50)
+	class Meta:
+		db_table="user"
+
+class customer(models.Model):
+	name=models.CharField(max_length=30)
+	email=models.EmailField(max_length=40)
+	pwd=models.CharField(max_length=50)
+	phno=models.CharField(max_length=10)
+	address=models.Field(max_length=50)
+	city=models.CharField(max_length=50)
+	pin=models.CharField(max_length=10)
+	psd=models.CharField(max_length=10)
+	class Meta:
+		db_table="customer"
+
+		
+class admin(models.Model):
+    name=models.CharField(max_length=50)
+    phno=models.CharField(max_length=50)
+    email=models.EmailField(max_length=50)
+    pswd=models.CharField(max_length=50)
+    class Meta:
+        db_table="admin"
+		
+class customer(models.Model):
+    name=models.CharField(max_length=30)
+    email=models.EmailField(max_length=40)
+    pwd=models.CharField(max_length=50)
+    phno=models.CharField(max_length=10)
+    #address=models.CharField(max_length=100)
+    city=models.CharField(max_length=50)
+    pin=models.CharField(max_length=10)
+    psd=models.CharField(max_length=10)
+    class Meta:
+        db_table="customer"
+    def __str__(self):
+        return self.email+"  "+self.name+"  "+self.phno+"  "+self.pwd+"  "+self.city+"  "+self.pin+"  "+self.psd+"  "
+		
+		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+			<script src="./script/login.js"></script>
+			
+		
+          
+		  
+		  <nav class="navbar navbar-default">
+      <div class="container-fluid" style="background-color:auto;">
+		<div>
+		<ul class="navbar-brand text-align:center"><strong><center>Urban Kitchen</center></strong></li></ul>
+		</div>
+		<div>
+		<ul class="nav navbar-nav active" style="float:center;">
+            <li class="active"><a href="main">Home</a></li>
+			<li ><a href="men">Menu</a></li>
+        </ul>	
+		</div>
+      </div>
+    </nav>
+	
+	<nav class="navbar navbar-default">
+      <div class="container-fluid" style="background-color:auto;">
+		<div>	
+			<ul class="nav navbar-nav" style="float: right;">
+              <li><a style="color: green" href="log">Log In</a></li>
+              <li><a style="color: green" href="sign">Sign In</a></li>
+			</ul>
+		</div>
+      </div>
+    </nav>
+	
+	<div class="container-fluid">
+	<h2 style="text-align:center; color:white;"><strong>Now Urban Kitchen is in your city.</strong></h2>
+	</div>
+		  
+		  
+		  
+		  
+		  
+		  
+<!DOCTYPE HTML>
+{% load static%}
+<html>
+	<head>
+        <title>Reservation</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="stylesheet" href="{%static 'story/style.css'%}">
+			<style>
+h2 {
+    color: yellow;
+.mt10{
+	margin-top: 20px;
+}
+.ml10 {
+        margin-left: 10px;
+      }
+.column {
+  float: left;
+  width: 10%;
+  padding: 4px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-sm-6{
+	width:70%;}
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button[type=submit] {
+  width: 15%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+select{
+width:25%;
+padding:10px;}
+
+
+label{
+float:left;
+width:25%;
+text-decoration:strong;
+color:black;
+margin-left:30px;}			
+  </style>
+	</head>
+	<body style="background-image: url('{% static 'reserv.jpg' %}');background-size: 2400px 700px;background-repeat: no-repeat;background-position: center center;
+    background-attachment: fixed;">
+		<div class="container">
+           <div class="row mt10">
+             <h2 style="color:cyan"><strong>Make Your Reservation</strong></h2>
+             <p style="color:white;">Table reservation deals :</p>
+          </div>
+         <hr>
+		 <form action="reservv">
+		 <div class="row mt10">
+                   <div class="form-group">
+                       <div class="col-sm-6">
+                           <label for="name"><h2>Name:</label>
+                           <input type="name" class="form-control" placeholder="Name" required="" name="a1"><br>
+                       </div>
+                     <div class="col-sm-6">          
+                         <label for="number"><h2>Contact No.:</label></h2>
+                         <input type="number" class="form-control" placeholder="contact No." required="" name="a2">
+						<br>
+                     </div>
+                 </div>
+              </div>
+		 <div class="row mt10">
+			<div class="col-sm-6">
+				<label for="date"><h2>Choose date:</label><br><br>
+				<input type="date" class="form-control" required="" name="a3"></h3>
+			</div>
+			<div class="col-sm-6" "dropdown" "mt10" "ml10"> 
+			<label for="seats"><h2>Make your seats: </h3></label><br>
+				<h2><select required="" name="a4">
+					<option> Select 👥</option>
+					<option> 2 Guests</option>
+					<option> 3 Guests</option>
+					<option> 4 Guests</option>
+					<option> 5 Guests</option>
+					<option> 6 Guests</option>
+					<option> 7 Guests</option>
+					<option> 8 Guests</option>
+					<option> 9 Guests</option>
+					<option> 10 Guests</option>
+				</select></h3>
+			</div>
+		 </div><br><br>
+		 <div class="row mt10">
+			<div class="column">
+				<button class="btn btn-success btn-md">4.00PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">4.30PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">5.00PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">5.30PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">6.00PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">6.30PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">7.00PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">7.30PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">8.00PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">8.30PM</button>
+			</div>
+			<div class="column">
+				<button class="btn btn-success btn-md">9.00PM</button>
+			</div>
+		 </div>
+		 <div class="row mt10">
+				<div class="column"><br><br><br><br>
+				<button type="submit"  width="100%">Book</button></div>
+				<h2><center>{{name}}</center></h2>
+		 </div>
+		 </form>
+		</div>
+	</body>
+</html>		  

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{%static 'story/style.css'%}">
+  <title>Contact Us</title>
+</head>
+<style>
+  .a1 {
+
+    background-color: rgb(25, 211, 236);
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+
+  .a2 {
+
+    background-color: rgb(25, 211, 236);
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+
+  .a3 {
+
+    background-color: rgb(25, 211, 236);
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+
+  .a4 {
+    background-color: rgb(25, 211, 236);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .a4 input:hover {
+    font-size: large;
+    background-color: rgb(144, 144, 164);
+    cursor: pointer;
+  }
+
+  .a4:hover {
+    background: red;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  body {
+    background: rgb(30, 30, 40);
+  }
+
+  form {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 100 !important;
+    text-transform: capitalize;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 50px 200px;
+    padding: 20PX;
+  }
+
+  .white:hover {
+
+    background-color: rgb(40, 224, 80);
+    cursor: pointer;
+
+  }
+</style>
+
+<body style="background-image: url('{% static 'em.jpg' %}');background-size: 2400px 700px;background-repeat: no-repeat;background-position: center center;
+    background-attachment: fixed;">
+	<h1 class="white" style="align:center;">Contact Us!</h1>
+  <form>
+    <div class="container">
+      <div class="a1">
+        <label for="number">Number:<br> +91 7088995599</label>
+      </div>
+      <div class="a2">
+        <label for="email">Email id:<br> +91 urbankitchen@gmail.com</label>
+      </div>
+    </div>
+  </form>
+
+  <h1 class="white">We would love to hear from you!</h1>
+  <form action="cont">
+    <div class="container">
+      <div class="a1">
+        <input name="n1" type="text" class="feedback-input" required="" placeholder="Name" />
+      </div>
+      <div class="a2">
+        <input name="n2" type="email" class="feedback-input" required="" placeholder="Email" />
+      </div>
+      <div class="a3">
+        <textarea name="n3" class="feedback-input" required=""  placeholder="Comment"></textarea>
+      </div>
+      <div class="a4">
+        <input type="submit" value="SUBMIT" />
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

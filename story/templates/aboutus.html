@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{%static 'story/style.css'%}">
+    <title>About Us</title>
+
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background: url("img/happy-birthday-71380.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    .about-section h1 {
+        padding: 50px;
+        text-align: center;
+        /* background-color: #5c89eb; */
+        color: rgb(233, 241, 131);
+        text-decoration: underline;
+    }
+
+    .about-section p {
+        text-align: left;
+        color: wheat;
+
+    }
+
+    .containerA {
+        border: 5px solid white;
+        margin: 38px 33px;
+        padding: 30px;
+        width: 57%;
+        border-radius: 28px;
+        color: wheat;
+        text-align: justify;
+    }
+
+    .faq {
+        border: 5px solid white;
+        margin-bottom: auto;
+        border-radius: 28px;
+        color: rgb(255, 255, 255);
+        text-align: justify;
+        padding-left: 10px;
+    }
+
+    .faq h1 {
+        color: wheat;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .faq p:hover {
+        text-decoration: underline;
+        color: rgb(1, 249, 1);
+        font-size: x-large;
+    }
+
+    .containerA:hover {
+        color: rgb(1, 249, 1);
+        text-decoration: underline;
+        font-size: x-large;
+
+    }
+</style>
+
+<body  style="background-image: url('{% static 'em.jpg' %}');background-size: 1300px 700px;background-repeat: no-repeat;background-position: center center;
+    background-attachment: fixed;">
+    <div class="about-section">
+        <h1>About Us</h1>
+    </div>
+    <div class="containerA">
+        <p>Urban Kitchen is proud to serve a traditional Mexican cuisine with a variety of family recipes, with
+            fresh local ingredients to create amazing dishes. We have entertainment on the weekends to provide you a
+            unique unforgettable time. e have expanded our dinner and dessert menus to greater heights, opened a full
+            service bar & lounge and built private banquet rooms to offer our customers a special place to host
+            birthdays, receptions, bar mitzvahs, corporate functions and other private gatherings.
+            Whether you prefer to eat in the warm ambiance of our main dining room, enjoy dinner al fresco on our patio,
+            experience a romantic dinner in our Grotto, have a drink while you watch your favorite team play on the big
+            screens in our bar or host a party in our private banquet room, you will find a warm, inviting atmosphere
+            while enjoying the finest of Italian and Greek cuisine.</p>
+    </div>
+    <div class="faq">
+        <h1>FAQ</h1>
+        <p>
+            Q1. Is delivery charges are free or not?<br>
+			Ans. It's Free, just Grab!
+        </p>
+        <p>
+            Q2.Is there any offer going on for valentine's week?<br>
+			Ans. Yes, Valid For Couples.
+        </p>
+        <p>
+            Q3.Is birthday celebration allowed?<br>
+			Ans. Yes, you have to book at first.
+        </p>
+        <p>
+            Q4.What are the pre-booking charges?<br>
+			Ans. ₹50.
+        </p>
+        <p>
+            Q5.Is smoking allowed?<br>
+			Ans. No, Smoking are subject to life risk.
+        </p>
+    </div>
+</body>
+
+</html>

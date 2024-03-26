@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urban Kitchen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="{%static 'story/style.css'%}">
+		<style>
+.mt10{
+	margin-top: 20px;}
+.ml10 {
+        margin-left: 10px;}
+button{
+margin: 0; 
+position: absolute;
+top: 50%;left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+ width:15%;
+ border-radius:5px; 
+background-color:rgba(85, 122, 186, 0.539);
+padding:15px;}
+h1{
+	position: absolute;
+	top: 20%;left: 30%;
+	text-align: center;
+	color: wheat;}
+h1:hover {
+background-color: rgb(40, 187, 224);
+cursor: pointer;}
+h2{
+	position: absolute;
+	top: 30%;left: 5%;
+	text-align: center;
+	color: white;}
+h2:hover {
+background-color: rgb(224, 40, 153);
+cursor: pointer;}
+</style>
+</head>
+<body style="background-image: url('{% static 'restaurant.jpg' %}');background-size: 1500px 800px; background-repeat: no-repeat;background-position: center center;
+    background-attachment: fixed;" >
+<div class="container">
+	<div>
+		<ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color:auto;position: fixed;top 0;width: 100%;"><h3><b>
+			<li style="display: block;color:red;text-align: left;padding: 14px 16px;text-decoration: none;"><a style="color:orange"  href="main">Home</a> |
+			<a style="color:orange" href="men">Menu</a></li>
+			<li style="display: block;color: white;text-align: right;padding: 14px 20px;text-decoration: object;"><h3><a style="color: black" ><strong>Welcome {{c.name}}</strong></a> | <a href="main"><b>Log Out  </b></a></h3></li>	
+		</ul>
+	</div>
+    
+	<div><form action="reservation.html">
+			<button type="submit" formaction="reserv" role="button" "><b>Book your Table</b></a></button></form>
+	</div>
+	<div>
+		<h1>Now Urban Kitchen is in Your City.</h1>
+		<h2>Pull up a chair and stay a while!  We’re excited to offer  indoor seating weather permitting. Book your table now!</h2>
+	</div>
+	<div>
+		<ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color:auto;position: fixed;bottom: 0;width: 100%;">
+			<li style="display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: object;"><a href="admin" style="color:white"><b>Admin Login</b></a>|
+			<a href="contact" style="color:white"><b>Contact Us</b></a>|<a href="about" style="color:white"><b>About Us</b></a></li>			
+		</ul>
+	</div>
+</div>
+</body>
+</html>

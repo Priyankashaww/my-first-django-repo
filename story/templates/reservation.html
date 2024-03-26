@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+{% load static%}
+<html>
+	<head>
+        <title>Reservation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="{%static 'story/style.css'%}">
+		<style>
+.container {
+    border-radius: 5px;
+    background-color: auto;
+    padding: 20px;
+	text-align:center;}
+.mt10{
+	margin-top:10px;}
+	.ml30{
+	margin-left:30px;}
+h2{
+	color:yellow;}
+.column {
+  float: left;
+  width: 10%;
+  padding: 4px;}
+  
+* {
+  box-sizing: border-box;}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;}
+  
+input[type=name], input[type=number], input[type=date], input[type=seats], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;}
+  
+.buttonn {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: black05;
+  border-radius:5px;
+  cursor: pointer;
+  width: 70%;
+  opacity: 1.9;} 
+		</style>
+	</head>
+	<body style="background-image: url('{% static 'reserv.jpg' %}');background-size: 2100px 700px;background-repeat: no-repeat;background-position: center center;
+    background-attachment: fixed; background-transformation:50%">
+	<div class="container">
+	<div class="row mt10 ml30">
+		<h2 style="color:cyan"><strong>Make Your Reservation</strong></h2>
+        <p style="color:white;">Table reservation deals :</p>
+	</div>
+	<hr>
+	<form action="reservv">
+	<div class="row mt10 ml30">
+		<label for="name"><h2>Name:</label>
+        <input type="name"  placeholder="Name" required="" name="a1">
+	</div>
+	<div class="row mt10 ml30">          
+		<label for="number"><h2>Contact No.:</label>
+        <input type="number"  placeholder="Contact No." required="" name="a2">
+	</div>
+	<div class="row mt10 ml30">
+		<label for="date"><h2>Choose date:</label>
+		<input type="date" required="" name="a3"></h2>
+	</div>
+	<div class="row mt10 ml30 dropdown"> 
+		<label for="seats"><h2>Make your seats:</label>
+			 <select required="" name="a4">
+					<option> Select 👥</option>
+					<option> 2 Guests</option>
+					<option> 3 Guests</option>
+					<option> 4 Guests</option>
+					<option> 5 Guests</option>
+					<option> 6 Guests</option>
+					<option> 7 Guests</option>
+					<option> 8 Guests</option>
+					<option> 9 Guests</option>
+					<option> 10 Guests</option>
+				</select></h2>
+	</div>
+	<div class="row mt10 ml30">
+			<div class="column">
+				<button class="buttonn">4.30PM</button>
+			</div>
+			<div class="column">
+				<button class="buttonn">5.00PM</button>
+			</div>
+			<div class="column">
+				<button class="buttonn">5.30PM</button>
+			</div>
+			<div class="column">
+				<button class="buttonn">6.00PM</button>
+			</div>
+			<div class="column">
+				<button class="buttonn">6.30PM</button>
+			</div>
+			<div class="column">
+				<button class="buttonn">7.00PM</button>
+			</div>
+			<div class="column">
+				<button class="buttonn">7.30PM</button>
+			</div>
+			<div class="column">
+				<button class="buttonn">8.00PM</button>
+			</div>
+			<div class="column">
+				<button class="buttonn">8.30PM</button>
+			</div>
+			<div class="column">
+				<button class="buttonn">9.00PM</button>
+			</div>
+	<div>
+	<div class="row mt10 ml30">
+				<button type="submit" style="background-color:#04AA6D; width:10%; button-border:rgb(1, 0, 0); border-radius:4px; padding:12px;">Book</button></div>
+				<h2><center>{{name}}</center></h2>
+		 </div>
+	</div>
+	</div>
+	</form>
+	</div>
+	</body>

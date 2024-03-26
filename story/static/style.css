@@ -1,0 +1,74 @@
+.tt{
+	color: yellow
+}
+
+
+#head{
+	width: auto;
+	height: 150px;
+	background-color:orange;
+	/*background-image: url("%static 'food2.jpg'%"); */
+}
+
+#body{
+	width: auto;
+	height: 350px;
+	background-color: black;
+	
+}
+
+#leg{
+	width: auto;
+	height: 150px;
+	background-color: green;
+}
+/*#st{
+                .form-control {
+                    width: 60% !important;
+                }
+                 body {
+                    background-image:url('{%static 'food2.jpg'%}');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: 100% 100%;
+                    color: #e6e3e3;
+                }
+}
+}
+.text-center {
+  text-align: center;
+}
+
+
+.ab{
+	body {
+		width: auto;
+		height: 100;
+  	background-image: url"s(% static 'rest.jpg' %)"}
+}                  
+
+
+.mt10{
+	margin-top: 20px;
+}
+.form-control{
+			width: 100% !important;
+
+}
+.ml10 {
+        margin-left: 10px;
+      }
+.bg{
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}*/

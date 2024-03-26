@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+{%load static%}
+<link rel="stylesheet" href="{%static 'design.js'%}">
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <head>
+        <title>Admin Login</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="stylesheet" href="{%static 'story/style.css'%}">
+            <script src="./script/login.js"></script>
+			<style>
+.mt10{
+	margin-top: 30px;
+}
+
+.ml10 {
+        margin-left: 10px;
+      }
+.col-sm-6{
+	width:70%;}
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+label{
+float:left;
+width:25%;
+text-decoration:strong;
+color:black;
+margin-left:30px;}
+			</style>
+    </head>
+    <body  style="background-image: url('{% static 'bg.png' %}');background-size: 1300px 700px;background-repeat: no-repeat;background-position: center center;
+    background-attachment: fixed;">
+       
+       <div class="container">
+           <div class="row mt10">
+            <h2 class="mt10 ml10"><strong>Admin Login</strong></h2>
+            <p>Enter your credential for login</p>
+           </div> 
+           <hr>
+		   <form action="adminlogin">
+               <div class="row mt10">
+                       <div class="col-sm-6 ">
+                           <label for="email"><b>Email:</b></label>
+                           <input type="email" id="txtEmail" class="form-control" placeholder="Email Address" required=""  name="a1">
+                       </div>
+               </div>
+               <div class="row mt10">
+                    <div class="col-sm-6">
+                         <label for="pwd"><b>Password:</b></label>
+                         <input type="password" id="txtPswd" class="form-control" id="pwd" placeholder="Password" required=""  name="a2">
+						<br>
+					</div>
+              </div>
+               <div class="row mt10 form-group">
+					<center><input type="submit" class="btn btn-primary "></center>
+               </div>
+           </div> 
+		 </form>		   
+       </div>
+    </body>

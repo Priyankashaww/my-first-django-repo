@@ -1,0 +1,13 @@
+<html>
+<body>
+<table border="1">
+<p><strong>Customer Table Details:</strong></p>
+<tr><th>Name</th><th>Email_id</th><th>Pin</th><th>Contact no.</th><th>City</th><th>Password</th><th>Confirm Password</th></tr>
+{% for i in q %}
+<tr><td>{{ i.name }}</td><td>{{ i.email }}</td><td>{{ i.pin }}</td><td>{{ i.phno }}</td><td>{{ i.city }}</td><td>{{ i.pwd }}</td><td>{{ i.psd }}</td><td><a href="delc/{{i.id}}">
+Delete</a></td><td><a href="editcust/{{ i.id }}">Edit</a></td></tr>
+{% endfor %}
+</table>
+</table>
+</body>
+</html>
